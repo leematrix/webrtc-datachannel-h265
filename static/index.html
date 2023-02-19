@@ -1,15 +1,58 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Tuya Demo</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="WebRTC code samples">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+        <meta itemprop="description" content="Client-side WebRTC code samples">
+        <meta itemprop="image" content="images/webrtc-icon-192x192.png">
+        <meta itemprop="name" content="WebRTC code samples">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta id="theme-color" name="theme-color" content="#ffffff">
 
-<body>
-    <p style="text-align: center";>
-        <a href="webrtc.html" style="display:block; text-align:left; font-size:30px;">webrtc</a>
-    </p>
-</body>
+        <base target="_blank">
+
+        <title>Webrtc</title>
+
+        <link rel="icon" sizes="192x192" href="images/webrtc-icon-192x192.png">
+        <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/root.css"/>
+        <link rel="stylesheet" href="css/webrtc.css"/>
+    </head>
+
+    <body>
+        <div id="container">
+            <canvas></canvas>
+            <video></video>
+            <div class="box">
+                <button id="callButton">Call</button>
+            </div>
+        </div>
+
+        <script src="js/main.js" async type="module"></script>
+        <script src="fmp4-muxer.js" async type="module"></script>
+<!--        <script>-->
+<!--            function fetchAndInstantiate(url, importObject) {-->
+<!--                return fetch(url).then(response =>-->
+<!--                    response.arrayBuffer()-->
+<!--                ).then(bytes =>-->
+<!--                    WebAssembly.instantiate(bytes, importObject)-->
+<!--                ).then(results =>-->
+<!--                    results.instance-->
+<!--                );-->
+<!--            }-->
+
+<!--            fetchAndInstantiate('fmp4-muxer.wasm', importObject).then(function(instance) {-->
+<!--                // 调用导出函数：-->
+<!--                instance.exports.exports()-->
+
+<!--                // 或者获取导出内存的缓存内容：-->
+<!--                var i32 = new Uint32Array(instance.exports.memory.buffer);-->
+
+<!--                // 或者获取导出表格中的元素：-->
+<!--                var table = instance.exports.table;-->
+<!--                console.log(table.get(0)());-->
+<!--            })-->
+<!--        </script>-->
+    </body>
 </html>

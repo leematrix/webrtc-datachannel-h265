@@ -1,7 +1,7 @@
 package http
 
 import (
-	"log"
+	"fmt"
 	"net/http"
 )
 
@@ -10,10 +10,10 @@ func ListenAndServe() {
 
 	http.Handle("/", fs)
 
-	log.Print("web server listen on :5555...")
+	fmt.Printf("web server listen on :5555...\n")
 
 	err := http.ListenAndServe(":5555", nil)
 	if err != nil {
-		log.Printf("web serve fail: %s", err.Error())
+		fmt.Printf("web serve fail: %s", err.Error())
 	}
 }

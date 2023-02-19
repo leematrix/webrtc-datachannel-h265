@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <targets>
+      <target name="root@47mp216176.wicp.vip:30000" type="ssh/sftp" uuid="deaf57a3-e34c-4b1b-bf1f-8672fcee2854">
+        <config>
+          <option name="projectRootOnTarget" value="/home/code/github/webrtc-datachannel-h265" />
+          <option name="serverName" value="root@47mp216176.wicp.vip:30000 password" />
+          <option name="useRsync" value="true" />
+        </config>
+        <ContributedStateBase type="GoLanguageRuntime">
+          <config>
+            <option name="goPath" value="/root/go" />
+            <option name="goRoot" value="/usr/bin/go" />
+            <option name="goVersion" value="go1.16.12 linux/amd64" />
+          </config>
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>
